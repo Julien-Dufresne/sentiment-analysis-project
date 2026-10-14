@@ -1,7 +1,9 @@
+import os
 import pandas as pd
-from sklearn.model_selection import train_test_split
+from joblib import dump
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline, make_pipeline
 
 
@@ -49,6 +51,12 @@ def save_model(model: Pipeline, model_path: str) -> None:
     dump(model, model_path)
     print(f"Saved model to {model_path}")
 
+def main(data_path: str, model_path: str) -> None:
+    """Main workflow to load, train, evaluate, and save the model."""
+    df = load_and_validate_data(data_path)
+    X_train, X_test, y_train, y_test = split_data(df)
+    model = train_model(X_train, y_train)
+    save_model(model, model_path)
     
 
 if __name__ == "__main__":
