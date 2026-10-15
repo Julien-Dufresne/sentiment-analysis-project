@@ -30,3 +30,6 @@ python src/predict.py "I absolutely loved it" "That was awful"
 
 
 >>>>>>> 27b3dc0b4cca77b8f9520083f344f8d36ceba53e
+
+
+#Adding a line at the end by Julien
