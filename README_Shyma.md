@@ -1,3 +1,10 @@
+#ReadMeShyma
+<<<<<<< HEAD
+# sentiment-analysis-project
+sentiment-analysis-project
+
+#this is a test
+=======
 # Sentiment Analysis Pipeline
 
 ## Setup
@@ -17,9 +24,11 @@ python src/train.py --data data/train.csv --out models/sentiment.joblib
 
 ## Predict
 python src/predict.py "I absolutely loved it" "That was awful"
-# Output format: label  probability  text
-# Example:
-# 1    0.982    I absolutely loved it
-# 0    0.015    That was awful
 
 
+
+#Adding a line at the end by Julien
+
+#Adding another line 15:05
+
+#Adding another line 15:22
