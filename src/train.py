@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-import pandas as pd
-=======
-<<<<<<< HEAD
-import pandas as pd
-=======
+
 import argparse
 import pandas as pd
 import os
@@ -12,8 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline, make_pipeline
->>>>>>> 27b3dc0b4cca77b8f9520083f344f8d36ceba53e
->>>>>>> b6d2e7b531cb4ac4146fdfb45e4344499a76f768
+
 
 def load_and_validate_data(data_path: str) -> pd.DataFrame:
     """
@@ -24,16 +18,15 @@ def load_and_validate_data(data_path: str) -> pd.DataFrame:
         raise ValueError("CSV must contain 'text' and 'label' columns")
     return df
 
-<<<<<<< HEAD
+
 if __name__ == "__main__":
     df = load_and_validate_data("data/sentiments.csv")
     print(df.head())
-=======
-<<<<<<< HEAD
+
 if __name__ == "__main__":
     df = load_and_validate_data("data/sentiments.csv")
     print(df.head())
-=======
+
 def split_data(
     df: pd.DataFrame,
 ) -> tuple[pd.Series, pd.Series, pd.Series, pd.Series]:
@@ -92,5 +85,4 @@ if __name__ == "__main__":
 
     args: argparse.Namespace = parser.parse_args()
     main(data_path=args.data, model_path=args.out)
->>>>>>> 27b3dc0b4cca77b8f9520083f344f8d36ceba53e
->>>>>>> b6d2e7b531cb4ac4146fdfb45e4344499a76f768
+
