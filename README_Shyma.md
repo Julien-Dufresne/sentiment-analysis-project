@@ -1,10 +1,3 @@
-#ReadMeShyma
-<<<<<<< HEAD
-# sentiment-analysis-project
-sentiment-analysis-project
-
-#this is a test
-=======
 # Sentiment Analysis Pipeline
 
 ## Setup
@@ -32,3 +25,4 @@ python src/predict.py "I absolutely loved it" "That was awful"
 #Adding another line 15:05
 
 #Adding another line 15:22
+#Updated README head-Shyma 08:55
