@@ -1,11 +1,3 @@
 scikit-learn==1.7.1
 pandas==2.2.2
-<<<<<<< HEAD
 joblib==1.2.0
-=======
-<<<<<<< HEAD
-joblib==1.2.0
-=======
-joblib==1.2.0
->>>>>>> 27b3dc0b4cca77b8f9520083f344f8d36ceba53e
->>>>>>> b6d2e7b531cb4ac4146fdfb45e4344499a76f768
